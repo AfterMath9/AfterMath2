@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AfterMath</title>
+    <link rel="icon" href="media/AfterMath.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+
+<body onresize="resize()" onload="main()">
+    <canvas id="canvas-background"></canvas>
+    <script src="js/snow.js"></script>
+    <script src="js/sparkle.js"></script>
+    <script>
+        function playshit() {
+            var video = document.getElementById("video");
+            var audio = document.getElementById("audio");
+            audio.volume = 0.5;
+            video.volume = 0.5;
+            audio.play();
+            video.play();
+        }
+    </script>
+
+    <meta property="og:site_name" content="Private AfterMath Dev Website">
+    <meta property="og:type" content="image">
+    <meta property="og:title" content="After Math">
+    <meta property="og:image" content="media/">
+    <meta property="og:image:height" content="720">
+    <meta property="og:image:width" content="720">
+
+    <video loop muted playsinline preload="auto" class="vidoverlay" id="video">
+	<source src="media/video.mp4" type="video/mp4">
+</video>
+
+    <audio loop preload="auto" id="audio">
+	<source src="media/audio.mp3" type="audio/mpeg">
+</audio>
+
+    <input type="checkbox" autocomplete="off" id="overlay-toggle">
+    <div class="overlay fullscreen">
+        <label for="overlay-toggle" onclick="playshit();">
+		<span class="overlayhover hover" style="font-family: monospace; font-size: 0.6em;">click to enter</span>
+	</label>
+    </div>
+
+    <div id="center" align="center">
+        <span>
+		<p class="hover graffiti" style="font-size: 100px">AfterMath
+		</p><p class="hover"></p>
+
+		<p class="hover">
+			After Math
+		</p>
+
+		
+		<br>
+		<p class="hover">
+			<a href="https://www.x.com/amrmafalani/" target="_blank" class="hover">Twitter</a> |
+			<a href="https://t.me/amr1sy" target="_blank" class="hover">Telegram</a> |
+			<a href="https://github.com/aftermath9/" target="_blank" class="hover">Github</a> |
+			<a href="https://discord.gg/" target="_blank" class="hover">Discord Server</a> |
+			<a href="https://www.tiktok.com/@amr1sy" target="_blank" class="hover">Tiktok</a>
+		</p><p class="hover"></p>
+
+		<br>
+
+		<img src="https://discord.c99.nl/widget/theme-4/394179166360174594.png" alt="logo"> 
+		<p></p>
+	</span>
+    </div>
+
+</body>
+
+</html>
